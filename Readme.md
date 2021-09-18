@@ -6,7 +6,7 @@
 <hr>
 <h4 align="center">Test Generation Framework</h4>
 
-![demo](L:\home\websec\git\haptyc\img\tag.png)
+![tag](https://github.com/defparam/haptyc/raw/master/img/tag.png)
 
 ### What's Haptyc?
 
@@ -249,57 +249,69 @@ In the example above the test uses `state.init` to base64 decode the wrapped inn
 |  random_insert(data, list) | This function will insert a payload from the list into the supplied data at a random index |
 
 #### Bulitin Wordlists
-@ApplyPayloads("0-9")
-@ApplyPayloads("10 letter words")
-@ApplyPayloads("11 letter words")
-@ApplyPayloads("12 letter words")
-@ApplyPayloads("3 letter words")
-@ApplyPayloads("4 letter words")
-@ApplyPayloads("5 letter words")
-@ApplyPayloads("6 letter words")
-@ApplyPayloads("7 letter words")
-@ApplyPayloads("8 letter words")
-@ApplyPayloads("9 letter words")
-@ApplyPayloads("a-z")
-@ApplyPayloads("CGI scripts")
-@ApplyPayloads("Directories - long")
-@ApplyPayloads("Directories - short")
-@ApplyPayloads("dirsearch")
-@ApplyPayloads("Extensions - long")
-@ApplyPayloads("Extensions - short")
-@ApplyPayloads("Filenames - long")
-@ApplyPayloads("Filenames - short")
-@ApplyPayloads("Format strings")
-@ApplyPayloads("Form field names - long")
-@ApplyPayloads("Form field names - short")
-@ApplyPayloads("Form field values")
-@ApplyPayloads("Fuzzing - full")
-@ApplyPayloads("Fuzzing - JSON_XML injection")
-@ApplyPayloads("Fuzzing - out-of-band")
-@ApplyPayloads("Fuzzing - path traversal")
-@ApplyPayloads("Fuzzing - path traversal (single file)")
-@ApplyPayloads("Fuzzing - quick")
-@ApplyPayloads("Fuzzing - SQL injection")
-@ApplyPayloads("Fuzzing - template injection")
-@ApplyPayloads("Fuzzing - XSS")
-@ApplyPayloads("HTTP headers")
-@ApplyPayloads("HTTP verbs")
-@ApplyPayloads("IIS files and directories")
-@ApplyPayloads("Interesting files and directories")
-@ApplyPayloads("Local files - Java")
-@ApplyPayloads("Local files - Linux")
-@ApplyPayloads("Local files - Windows")
-@ApplyPayloads("Passwords")
-@ApplyPayloads("Server-side variable names")
-@ApplyPayloads("Short words")
-@ApplyPayloads("SSRF targets")
-@ApplyPayloads("User agents - long")
-@ApplyPayloads("User agents - short")
-@ApplyPayloads("Usernames")
+* @ApplyPayloads("0-9")
+* @ApplyPayloads("10 letter words")
+* @ApplyPayloads("11 letter words")
+* @ApplyPayloads("12 letter words")
+* @ApplyPayloads("3 letter words")
+* @ApplyPayloads("4 letter words")
+* @ApplyPayloads("5 letter words")
+* @ApplyPayloads("6 letter words")
+* @ApplyPayloads("7 letter words")
+* @ApplyPayloads("8 letter words")
+* @ApplyPayloads("9 letter words")
+* @ApplyPayloads("a-z")
+* @ApplyPayloads("CGI scripts")
+* @ApplyPayloads("Directories - long")
+* @ApplyPayloads("Directories - short")
+* @ApplyPayloads("dirsearch")
+* @ApplyPayloads("Extensions - long")
+* @ApplyPayloads("Extensions - short")
+* @ApplyPayloads("Filenames - long")
+* @ApplyPayloads("Filenames - short")
+* @ApplyPayloads("Format strings")
+* @ApplyPayloads("Form field names - long")
+* @ApplyPayloads("Form field names - short")
+* @ApplyPayloads("Form field values")
+* @ApplyPayloads("Fuzzing - full")
+* @ApplyPayloads("Fuzzing - JSON_XML injection")
+* @ApplyPayloads("Fuzzing - out-of-band")
+* @ApplyPayloads("Fuzzing - path traversal")
+* @ApplyPayloads("Fuzzing - path traversal (single file)")
+* @ApplyPayloads("Fuzzing - quick")
+* @ApplyPayloads("Fuzzing - SQL injection")
+* @ApplyPayloads("Fuzzing - template injection")
+* @ApplyPayloads("Fuzzing - XSS")
+* @ApplyPayloads("HTTP headers")
+* @ApplyPayloads("HTTP verbs")
+* @ApplyPayloads("IIS files and directories")
+* @ApplyPayloads("Interesting files and directories")
+* @ApplyPayloads("Local files - Java")
+* @ApplyPayloads("Local files - Linux")
+* @ApplyPayloads("Local files - Windows")
+* @ApplyPayloads("Passwords")
+* @ApplyPayloads("Server-side variable names")
+* @ApplyPayloads("Short words")
+* @ApplyPayloads("SSRF targets")
+* @ApplyPayloads("User agents - long")
+* @ApplyPayloads("User agents - short")
+* @ApplyPayloads("Usernames")
 
 ### How to install
+There are 2 ways to install Haptyc
+1) The easy way using the release `turbo-intruder-all_w_haptyc.jar` attached to this repository
+2) The manual way
 
+Either way you choose these releases do not include radamsa and if you want radamsa support you must install it from this repo: (Optional) Installl radamsa via [https://gitlab.com/akihe/radamsa](https://gitlab.com/akihe/radamsa)
+
+### How to install - Pre-packaged (easy)
+1) Download the `turbo-intruder-all_w_haptyc.jar` release
+2) Open Burp
+3) Go to the Extender tab
+4) Click the `Add` button
+5) Click the `Select File ...` button and choose `turbo-intruder-all_w_haptyc.jar`
+
+### How to install - Manual (patching turbo-intruder-all.jar)
 1) Clone this repo
 2) In bash execute `./install.sh <directory with turbo-intruder-all.jar>`
 3) In Burp reload Turbo Intruder
-4) (Optional) Installl radamsa via [https://gitlab.com/akihe/radamsa](https://gitlab.com/akihe/radamsa)
