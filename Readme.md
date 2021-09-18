@@ -10,11 +10,11 @@
 
 ### What's Haptyc?
 
-Haptyc is a python library which was built to add payload position support and Sniper/Clusterbomb/Batteringram/Pitchfork attack types into Turbo Intruder. While Haptyc accompishes these goals fairly well it also introduces a simpler way to express test sequences in general. While this library was meant to target Turbo Intruder it has no hard dependencies on Turbo Intruder and can be used anywhere one requires test generation in a Python context.
+Haptyc is a python library which was built to add payload position support and Sniper/Clusterbomb/Batteringram/Pitchfork attack types into Turbo Intruder. While Haptyc accomplishes these goals fairly well it also introduces a simpler way to express test sequences in general. While this library was meant to target Turbo Intruder it has no hard dependencies on Turbo Intruder and can be used anywhere one requires test generation in a Python context. Unfortunately at this time since Haptyc was built for a jython interpreter it only supports Python 2.7 (however future changes will fix this).
 
 ### What are Haptyc tags?
 
-Haptyc tags are tags which a tester can use to annotate an original input payload. A tester can use multiple tags to surround key pieces of data in an HTTP request to wrap it as a positional payload. When tests are being generated Haptyc will parse all the tags in the original payload and generate tests in accordance to the functions associated with the tag names. When Haptyc evaluates a Haptyc tag it will execute the associated tag function (this is called a Haptyc Transform) for a test payload to place in position of the associated tag in the request. Every tag function will recieve a *data* argument and a *state* arugment. The data argument may contain the inner data of the tag or may contain some other test payload sequence. The state argument is a state object associated with the tag where state can be stored between test iterations. Let's review an example.
+Haptyc tags are tags which a tester can use to annotate an original input payload. A tester can use multiple tags to surround key pieces of data in an HTTP request to wrap it as a positional payload. When tests are being generated Haptyc will parse all the tags in the original payload and generate tests in accordance to the functions associated with the tag names. When Haptyc evaluates a Haptyc tag it will execute the associated tag function (this is called a Haptyc Transform) for a test payload to place in position of the associated tag in the request. Every tag function will receive a *data* argument and a *state* argument. The data argument may contain the inner data of the tag or may contain some other test payload sequence. The state argument is a state object associated with the tag where state can be stored between test iterations. Let's review an example.
 
 #### Example 1: Simple list iteration
 
@@ -47,7 +47,7 @@ GET /animal/owl?original=dog&attempt=2 HTTP/1.1
 GET /animal/lion?original=dog&attempt=3 HTTP/1.1
 ```
 
-In the example above we how one can express tests in a simple way using Haptyc. First the Haptyc library is imported. Second we have defined the original data with our Haptyc tag annotations (GuessAnimal). Next the TestLogic class is defined and extended as a Transform class. Inside this class every method that starts with `test_` will get registered as a Haptyc tag for evalutation in the original payload. We use a logic decorator to apply the state logic for this Haptyc transform. In this case we use the `@ApplyList(list)` decorator to tell Haptyc to generate a test for every item in the specified list and place that item into the Haptyc transform as the data argument. Inside the transform we return a mutated version of the data to insert back into the position of the tag. In this case the mutation is the list item as data concatenated with the data surrounded by the tag (dog) and then concatentated with the iter value in the state object. Lastly the remaining python shows the TestFactory object being created and all tests being generated in a for loop iterator. This is an example of a standard sniper-style attack which targets a single payload position. Next lets look at other style of attacks.
+In the example above we how one can express tests in a simple way using Haptyc. First the Haptyc library is imported. Second we have defined the original data with our Haptyc tag annotations (GuessAnimal). Next the TestLogic class is defined and extended as a Transform class. Inside this class every method that starts with `test_` will get registered as a Haptyc tag for evaluation in the original payload. We use a logic decorator to apply the state logic for this Haptyc transform. In this case we use the `@ApplyList(list)` decorator to tell Haptyc to generate a test for every item in the specified list and place that item into the Haptyc transform as the data argument. Inside the transform we return a mutated version of the data to insert back into the position of the tag. In this case the mutation is the list item as data concatenated with the data surrounded by the tag (dog) and then concatentated with the iter value in the state object. Lastly the remaining python shows the TestFactory object being created and all tests being generated in a for loop iterator. This is an example of a standard sniper-style attack which targets a single payload position. Next lets look at other style of attacks.
 
 #### Example 2: Clusterbomb
 
@@ -100,7 +100,7 @@ Example 1 showed how to evaluate transforms sniper style by using the '+' sign a
 
 #### Example 3: Pitchfork/BatteringRam
 
-Using the same exact python code we can switch the attack style from clusterbomb to pitchfork by changing the '%' to a '#'. Pitchfork style attacks will place the postion payload all in parallel. The test count is the lowest number of tests given of all involved transforms.  
+Using the same exact python code we can switch the attack style from clusterbomb to pitchfork by changing the '%' to a '#'. Pitchfork style attacks will place the position payload all in parallel. The test count is the lowest number of tests given of all involved transforms.  
 
 Original Payload:
 ```HTTP
@@ -156,7 +156,7 @@ GET /animal?type=dog&id=8&process=False HTTP/1.1
 GET /animal?type=dog&id=9&process=False HTTP/1.1
 ```
 
-Persistent transforms are denoted by the '@' sign and the transform functions always start with `per_` this is because these tranforms are not iterative, they don't create tests or keep state. These transforms are just naive transformation which you can apply anywhere in the payload for a state-less transformation without affecting the stateful transforms. Since they don't prescribe any tests you cannot generate tests with persistent transforms alone, they are meant to be mixed with iterative transforms. In the example above we have a 10-test snipe style transform placing an incrementing id. Also we have a persistant transform which places a random boolean into its position.
+Persistent transforms are denoted by the '@' sign and the transform functions always start with `per_` this is because these transforms are not iterative, they don't create tests or keep state. These transforms are just naive transformation which you can apply anywhere in the payload for a state-less transformation without affecting the stateful transforms. Since they don't prescribe any tests you cannot generate tests with persistent transforms alone, they are meant to be mixed with iterative transforms. In the example above we have a 10-test snipe style transform placing an incrementing id. Also we have a persistent transform which places a random boolean into its position.
 
 
 #### Example 5:  Using state and state.init
