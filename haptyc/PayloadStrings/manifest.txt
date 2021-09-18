@@ -1,0 +1,48 @@
+0-9.pay
+10 letter words.pay
+11 letter words.pay
+12 letter words.pay
+3 letter words.pay
+4 letter words.pay
+5 letter words.pay
+6 letter words.pay
+7 letter words.pay
+8 letter words.pay
+9 letter words.pay
+Admins.pay
+a-z.pay
+CGI scripts.pay
+Directories - long.pay
+Directories - short.pay
+dirsearch.pay
+Extensions - long.pay
+Extensions - short.pay
+Filenames - long.pay
+Filenames - short.pay
+Format strings.pay
+Form field names - long.pay
+Form field names - short.pay
+Form field values.pay
+Fuzzing - full.pay
+Fuzzing - JSON_XML injection.pay
+Fuzzing - out-of-band.pay
+Fuzzing - path traversal.pay
+Fuzzing - path traversal (single file).pay
+Fuzzing - quick.pay
+Fuzzing - SQL injection.pay
+Fuzzing - template injection.pay
+Fuzzing - XSS.pay
+HTTP headers.pay
+HTTP verbs.pay
+IIS files and directories.pay
+Interesting files and directories.pay
+Local files - Java.pay
+Local files - Linux.pay
+Local files - Windows.pay
+Passwords.pay
+Server-side variable names.pay
+Short words.pay
+SSRF targets.pay
+User agents - long.pay
+User agents - short.pay
+Usernames.pay

