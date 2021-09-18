@@ -305,7 +305,7 @@ There are 2 ways to install Haptyc
 Either way you choose these releases do not include radamsa and if you want radamsa support you must install it from this repo: (Optional) Installl radamsa via [https://gitlab.com/akihe/radamsa](https://gitlab.com/akihe/radamsa)
 
 ### How to install - Pre-packaged (easy)
-1) Download the `turbo-intruder-all_w_haptyc.jar` release
+1) Clone this repo and note `turbo-intruder-all_w_haptyc.jar` in the release dir
 2) Open Burp
 3) Go to the Extender tab
 4) Click the `Add` button
@@ -313,5 +313,5 @@ Either way you choose these releases do not include radamsa and if you want rada
 
 ### How to install - Manual (patching turbo-intruder-all.jar)
 1) Clone this repo
-2) In bash execute `./install.sh <directory with turbo-intruder-all.jar>`
+2) In bash execute `./install.sh <absolute directory with turbo-intruder-all.jar>`
 3) In Burp reload Turbo Intruder
